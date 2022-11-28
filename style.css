@@ -52,6 +52,7 @@ a{
 }
 
 
+
 /* UTILITY CLASESSES */
 
 .small-bold-text{
@@ -107,6 +108,10 @@ a{
     border-color: var(--accent-color);
     color: var(--accent-color) !important;
 
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
 }
 
 
@@ -212,6 +217,7 @@ a{
 
 }
 
+
 .features-area {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -223,4 +229,120 @@ a{
     gap: 20px;
     max-width: 30%;
     text-align: center;
+}
+
+.features-card > img {
+    width: 60px;
+}
+
+/* -----------BIG_FEATURE_SECTION-------------- */
+
+.big-feature-section{
+    padding: 30px var(--padding-inline-section) 0;
+
+}
+
+.big-feature-container {
+    gap: 30px;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+.feature-descrption{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* -------------------Example-Section---------- */
+.examples-header{
+    flex-direction: column !important;
+    gap: 20px !important;
+}
+
+.examples-card {
+    position: relative;
+    width: 23%;
+    min-height: 300px;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.9)), url(./assets/asset\ 35.jpeg);
+    transition: 0.2s ease-out;
+    /* background-size: cover; */
+}
+
+.examples-card:hover {
+   box-shadow: 20px 20px 20px #888;
+}
+
+.examples-card:nth-child(3) {
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.9)), url(./assets/asset\ 34.jpeg);
+    background-size: cover;
+}
+
+.examples-card:nth-child(4) {
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.9)), url(./assets/asset\ 36.jpeg);
+    background-size: cover;
+}
+.examples-area {
+    margin-block: 30px;
+    justify-content: space-between;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* CTA_SECTION */
+
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.cta-section{
+    background-color: #183b54;
+    padding: 120px var(--padding-inline-section) 80px;
+}
+
+.cta-section-container p {
+    color: white;
+    margin-top: 20px;
+}
+
+/* ---------FOOTER------ */
+
+footer {
+    background-color: #ebf2fa;
+    padding-block: 80px;
+}
+
+.link-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-container {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Subfooter */
+
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+
+} 
+
+.sub-footer-container {
+    gap: 30px;
+    justify-content: center;
 }
